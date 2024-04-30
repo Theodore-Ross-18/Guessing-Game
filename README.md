@@ -35,3 +35,27 @@ An Enhance Guessing Game using Python Programming Language with the utilization 
 9. Banner: The server sends a banner message to the client upon connection. Ensure that the banner is appropriately formatted and informative.
 
 10. Close Connection: The client closes the connection to the server after finishing the game. Ensure that the connection is closed properly to avoid resource leaks.
+
+Note: This script utilizes the socket library, which is a standard Python library for socket programming, to establish communication between the client and the server over a network.
+
+# Server Side Procedures:
+
+1. Socket Programming: This script uses Python's socket module for networking. Ensure that Python's socket module is available and functional in your Python environment.
+
+2. Threading: The script utilizes the threading module to handle multiple client connections concurrently. Make sure your Python environment supports threading.
+
+3. JSON Module: It uses the json module to load and save user data to a JSON file (user_data.json). Ensure that the json module is available in your Python environment.
+
+4. Host and Port: The server binds to a specific host IP address (host) and port number (port). Adjust these values as needed based on your network configuration.
+
+5. Banner Message: The server sends a banner message to clients upon connection. You can customize this message as needed.
+
+6. User Data Storage: User data is stored in a JSON file named user_data.json. Ensure that the script has read and write permissions to this file and that it exists in the script's directory.
+
+7. Game Logic: The script implements the game logic, including generating a random number based on the chosen difficulty level, handling user guesses, and calculating scores.
+
+8. Leaderboard: It maintains a leaderboard of player scores. Ensure that the leaderboard is displayed correctly and sorted by score.
+
+9. Error Handling: Add appropriate error handling to deal with potential issues such as client disconnections, connection errors, file I/O errors, etc.
+
+10. Client Interaction: Clients can connect to the server using a TCP socket and interact with the game by sending guesses and receiving feedback. Test the client-server interaction to ensure it works as expected.
